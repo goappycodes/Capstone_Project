@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bingrrr</string>
+
+    <string name="navigation_header_title">Bingrrr</string>
+
+    <string name="global_offline_toast">No Internet connection available</string>
+<string name="title_widget_today">Bingrrr Offers</string>
+    <string name="menu_fragment_main_share">Share</string>
+    <string name="menu_fragment_cart">Cart</string>
+    <string name="menu_fragment_account">My Account</string>
+    <string name="error_message">There is some problem with your internet. Please check your settings.</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="hint_name">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="placeholder_empty">Not found</string>
+    <string name="placeholder_offline">No Internet connection available</string>
+    <string name="google_api_key">Insert your API key</string>
+    <string name="permission_read_external_storage">Permission to read files is required</string>
+    <string name="permission_write_external_storage">Permission to write files is required</string>
+    <string name="permission_access_location">Permission to access your location is required</string>
+    <string name="google_app_id">Insert your API id</string>
+    <string name="fragment_main_downloading">Downloading…</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_logout">Logout</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="loading_screen_text">..loading</string>
+    <string name="splashscreen">order. eat. repeat.</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_error">ErrorActivity</string>
+    <string name="content_username">Enter your username</string>
+    <string name="content_pass">Enter your password</string>
+    <string name="content_guest">Continue as guest</string>
+    <string name="content_submit">Submit</string>
+    <string name="content_loading">Loading</string>
+</resources>

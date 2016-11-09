@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "390432736962",
+    "project_id": "bingrrr-1470228938356"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390432736962:android:6d13450509ded210",
+        "android_client_info": {
+          "package_name": "com.swatiag1101.bingrrr1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6nm59MR0Ll_gPTF6112pCsHpsD50AicI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

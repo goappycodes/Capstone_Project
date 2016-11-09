@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item
+		android:id="@+id/menu_fragment_account"
+		android:title="@string/menu_fragment_account"
+		android:icon="@drawable/account"
+		app:showAsAction="ifRoom" />
+	<item
+		android:id="@+id/menu_fragment_cart"
+		android:title="@string/menu_fragment_cart"
+		android:icon="@drawable/cart"
+		app:showAsAction="ifRoom" />
+
+	<item
+		android:id="@+id/menu_fragment_main_share"
+		android:title="@string/menu_fragment_main_share"
+		android:icon="@drawable/share"
+		app:showAsAction="ifRoom" />
+
+
+</menu>

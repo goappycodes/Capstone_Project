@@ -1,0 +1,124 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.LoginActivityFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/m">
+        <android.support.v7.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:background="@color/global_color_red_primary">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/bing_logo"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignEnd="@+id/login"
+                    android:layout_alignStart="@+id/login"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Login"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/global_color_red_primary"
+                    android:textSize="24sp"
+                    android:paddingTop="0dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/name"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:ems="10"
+                        android:textColor="@color/global_color_red_primary"
+                        android:hint="@string/hint_name"
+                        android:layout_marginTop="92dp" android:contentDescription="@string/content_username"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:id="@+id/password"
+                        android:layout_below="@+id/name"
+                        android:textColor="@color/global_color_red_primary"
+                        android:hint="@string/hint_password"
+                        android:ems="10"
+                        android:layout_alignStart="@+id/name" android:contentDescription="@string/content_pass"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/guest_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:text="Continue as Guest"
+                android:padding="8dp"
+                android:background="@color/global_color_red_primary"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:contentDescription="@string/content_guest"/>
+
+            </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_done"
+        app:backgroundTint="@color/global_color_red_primary"
+        app:layout_anchor="@id/card"
+        app:layout_anchorGravity="bottom|center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="126dp" android:contentDescription="@string/content_submit"/>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
