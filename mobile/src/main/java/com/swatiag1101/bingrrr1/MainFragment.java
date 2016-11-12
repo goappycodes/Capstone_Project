@@ -3,6 +3,7 @@ package com.swatiag1101.bingrrr1;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentSender;
@@ -54,6 +55,7 @@ import com.google.android.gms.location.LocationSettingsStates;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
 import com.swatiag1101.bingrrr1.activity.ErrorActivity;
 import com.swatiag1101.bingrrr1.activity.LoginActivity;
+import com.swatiag1101.bingrrr1.data.FoodContract;
 import com.swatiag1101.bingrrr1.fragment.TaskFragment;
 import com.swatiag1101.bingrrr1.listener.WebViewOnTouchListener;
 import com.swatiag1101.bingrrr1.utility.ContentUtility;
@@ -1116,6 +1118,11 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 				editor.putString("Status", "Logged out");
 				editor.apply();
 
+				ContentValues contentValues = new ContentValues();
+				contentValues.put(FoodContract.FoodEntry.status, "Logged out");
+
+				getActivity().getContentResolver().update(FoodContract.FoodEntry.CONTENT_URI,contentValues,null,null);
+
 				Intent i = new Intent(getActivity(),LoginActivity.class);
 				i.putExtra("Logged", "No");
 				i.putExtra("name", preferences1.getString("Name",""));
@@ -1129,6 +1136,11 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 			}
 
 			if("http://www.bingrrr.in/error-my-account".equals(url) || "http://bingrrr.in/error-my-account".equals(url)) {
+
+				ContentValues contentValues = new ContentValues();
+				contentValues.put(FoodContract.FoodEntry.status, "Wrong Details");
+
+				getActivity().getContentResolver().delete(FoodContract.FoodEntry.CONTENT_URI,null,null);
 
 				SharedPreferences.Editor editor = preferences.edit();
 				editor.putString("Name", "");

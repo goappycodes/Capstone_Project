@@ -71,9 +71,9 @@ public class TodayWidgetIntentService extends IntentService {
         String current_time = sdf.format(c.getTime());
 
         if (current_time.compareTo(time2)>0 && current_time.compareTo(someRandomTime)<0){
-            widget_val = "Store is Open now. Visit Bingrrr App to Order";
+            widget_val = "Store is Open now. Click to Binge!";
         }else{
-            widget_val = "Store is Open from 12:00 PM to 21:30 PM. Sorry for the inconvenience.";
+            widget_val = "Store is Closed now. Open from noon to 9 PM";
         }
 
         if (widget_val == null) {
